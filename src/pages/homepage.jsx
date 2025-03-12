@@ -1,3 +1,4 @@
+import Aboutme from "../components/aboutme"
 import Header from "../components/header"
 import Hero from "../components/hero"
 import Projects from "../components/projects"
@@ -9,6 +10,7 @@ function Homepage (){
         <Header/>
         <Hero/>
         <Projects/>
+        <Aboutme/>
         </>
     )
 }
