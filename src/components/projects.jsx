@@ -44,27 +44,27 @@ function Projects (){
 ]
     return(
         <>
-        <section className="mt-[100px] px-[100px] md:pt-[80px] h-auto flex flex-col justify-center  border border-slate-800 border-x-0 w-full ">
+        <section className="mt-[100px] xl:pt-0 xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
             <div>
-                <h1 className="w-[464px] h-[76px] font-bebas text-[76px] mb-0 leading-[100%] text-[#FFFFFF] ">
+                <h1 className=" md:w-[464px] w-[329px] md:h-[60px] h-[43px] xl:h-[76px] font-bebas md:text-[76px] text-[43px]  mb-0 leading-[100%] text-[#FFFFFF] ">
                FEATURED PROJECTS
                 </h1>
-                <p className="font-manrope text-[18px] mt-[12px] w-[600px] h-[54px] leading-[150%] text-[#C7C7C7] ">
+                <p className="font-manrope text-[18px] md:mt-[15px] mt-[12px] w-[343px] md:w-[500px] md:h-[50px] h-[48px] xl:w-[600px] xl:h-[54px] leading-[150%] text-[#C7C7C7] ">
                 Here are some of the selected projects that showcase my passion for front-end development.
                 </p>
             </div>
-            <div className="mt-[80px] ">
+            <div className="xl:mt-[80px] mt-[120px] md:mt-[100px]">
                 { Projects.map((project,index) => 
-                <div key={index} className="w-[1224px] h-[600px] mb-[120px] flex gap-[48px]  items-center">
-                    <div className="w-[600px] h-[600px] bg-[#1A1A1A]  flex justify-center items-center rounded-[15px]">
-                        <img src={project.image} alt="" className="w-[486px] h-[347px]    rounded-[10px] "/>
+                <div key={index} className="xl:w-[1224px] xl:h-[600px] mb-[120px] flex  flex-col xl:flex-row gap-[48px]  items-center">
+                    <div className="xl:w-[600px] xl:h-[600px] w-[384px] h-[343px] md:w-[500px] md:h-[400px] bg-[#1A1A1A]  flex justify-center items-center rounded-[15px]">
+                        <img src={project.image} alt="" className="xl:w-[486px] xl:h-[347px] w-[250px] h-[250px]  md:w-[400px]    rounded-[10px] "/>
 
                     </div>
                     <div>
-                        <h2 className="w-[576px] mb-0  font-manrope font-medium text-[32px] leading-[140%]  text-[#FFFFFF] ">
+                        <h2 className="xl:w-[576px] w-[343px] md:w-[500px] mb-0  font-manrope font-medium md:text-[28px] text-[24px] xl:text-[32px] leading-[140%]  text-[#FFFFFF] ">
                     {project.name}
                         </h2>
-                        <p className="w-[576px] mt-[16px] mb-0 h-auto font-manrope text-[18px] leading-[150%]  text-[#C7C7C7]">
+                        <p className="xl:w-[576px]  w-[343px] md:w-[500px] mt-[16px] mb-0 h-auto font-manrope text-[16px] xl:text-[18px] leading-[150%]  text-[#C7C7C7]">
                         {project.description}
                         </p>
 
