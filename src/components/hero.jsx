@@ -17,10 +17,10 @@ function Hero (){
         <>
         <section className="xl:mt-[126px] mt-[156px] w-full flex justify-center  items-center">
             <div >
-                <h1 className=" xl:w-[644px] md:w-[704px] w-[393px] mb-0  md:h-[100px] h-[60px] xl:h-[182px] font-bebas font-normal text-[57px] md:text-[101px] leading-[90%] text-[#FFFFFF]">
+                <h1 className=" xl:w-[644px] md:w-[704px] w-[353px] sm:w-[393px] mb-0  md:h-[100px] h-[40px] sm:h-[60px] xl:h-[182px] font-bebas font-normal sm:text-[57px] text-[47px] md:text-[101px] leading-[90%] text-[#FFFFFF]">
                 HI, I AM <br className="hidden xl:block"/>YUSUF ABIOLA.
                 </h1>
-                <p className="font-manrope mb-0  mt-[10px] text-[18px] leading-[150%] text-[#C7C7C7] w-[393px] xl:w-[544px]  md:w-[704px] h-[78px] md:h-[54px]">
+                <p className="font-manrope mb-0  mt-[10px] text-[18px] leading-[150%] text-[#C7C7C7]  sm:w-[393px] w-[353px] xl:w-[544px]  md:w-[704px] h-[78px] md:h-[54px]">
                 A front-end developer passionate about building accessible and user friendly websites.
                 </p>
                 <div className="flex gap-[16px] mt-[20px] md:mt-[40px]">
