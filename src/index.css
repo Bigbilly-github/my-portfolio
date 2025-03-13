@@ -12,3 +12,13 @@
 body{
   background-color: #0A0A0A;
 }
+
+html, body {
+  overflow-x: hidden; 
+  width: 100vw; 
+}
+
+
+#root {
+  overflow-x: hidden;
+}

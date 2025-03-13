@@ -14,13 +14,25 @@ function Aboutme (){
                     </div>
                     <div className="w-[702px] h-[241px] ">
                         <h2 className="w-[702px] h-[90px] font-manrope text-[32px] leading-[140%] mb-0 text-[#FFFFFF]">
-                        I am a front-end developer based in Sydney. Has Mechanical Engineering background. 
+                        I am a front-end developer with a background in Computer Science. 
                         </h2>
-                        <p className="font-manrope  mb-[81px] text-[18px] leading-[150%] w-[702px] mt-[16px]  text-[#C7C7C7]">
-                        I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.
+                        <p className="font-manrope   text-[18px] leading-[150%] w-[702px] mt-[16px]  text-[#C7C7C7]">
+                         I specialize in building responsive, user-friendly web applications using HTML, CSS, JavaScript, React, Github/Git and Tailwind CSS.
+
+
+                        </p>
+                        <p className="font-manrope   text-[18px] leading-[150%] w-[702px] mt-[16px]  text-[#C7C7C7]">
+                        With a keen eye for detail and a love for clean, functional design, I enjoy transforming ideas into interactive and visually appealing websites. I’ve worked on projects ranging from landing pages to job application trackers, constantly improving my skills in UI/UX implementation.
+
+
+                        </p>
+                        <p className="font-manrope mb-[81px]  text-[18px] leading-[150%] w-[702px] mt-[16px]  text-[#C7C7C7]">
+                                Beyond coding, I have experience in Teaching, where I’ve honed my organizational and problem-solving skills. I’m always eager to learn, collaborate, and take on exciting challenges in web development.
+
+                                🚀 Let’s build something amazing together!
                         </p>
 
-                        <a href="" className="underline  text-[#D3E97A] font-manrope">MORE ABOUT ME</a>
+                       
 
                     </div>
                 </div>

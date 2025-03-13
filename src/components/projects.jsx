@@ -44,7 +44,7 @@ function Projects (){
 ]
     return(
         <>
-        <section className="mt-[100px] px-[100px] pt-[80px] h-auto flex flex-col justify-center  border border-slate-800 border-x-0 w-full ">
+        <section className="mt-[100px] px-[100px] md:pt-[80px] h-auto flex flex-col justify-center  border border-slate-800 border-x-0 w-full ">
             <div>
                 <h1 className="w-[464px] h-[76px] font-bebas text-[76px] mb-0 leading-[100%] text-[#FFFFFF] ">
                FEATURED PROJECTS
@@ -87,6 +87,16 @@ function Projects (){
                                <p>
                                     Front-end developer
                                </p>
+
+                            </div>
+                            <div className="border-b border-b-slate-800 h-[50px] text-[#C7C7C7]  flex justify-between items-center">
+                               <p className="text-[16px] font-manrope w-[33px] ">
+                                  Stack
+                               </p>
+                               <p>
+                                    React, Javascript, Tailwind CSS
+                               </p>
+                               
                             </div>
 
                             <div className="mt-[48px] ">
