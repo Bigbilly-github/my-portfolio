@@ -57,7 +57,7 @@ function Projects (){
                 { Projects.map((project,index) => 
                 <div key={index} className="xl:w-[1224px] xl:h-[600px] mb-[120px] flex  flex-col xl:flex-row gap-[48px]  items-center">
                     <div className="xl:w-[600px] xl:h-[600px] w-[384px] h-[343px] md:w-[500px] md:h-[400px] bg-[#1A1A1A]  flex justify-center items-center rounded-[15px]">
-                        <img src={project.image} alt="" className="xl:w-[486px] xl:h-[347px] w-[250px] h-[250px]  md:w-[400px]    rounded-[10px] "/>
+                        <img src={project.image} alt="" className="xl:w-[486px] xl:h-[347px]  w-[320px] h-[200px]  md:w-[400px]    rounded-[10px] "/>
 
                     </div>
                     <div>
