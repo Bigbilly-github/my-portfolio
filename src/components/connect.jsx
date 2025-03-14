@@ -12,7 +12,10 @@ function Connect (){
                         LET'S CONNECT
                     </h1>
                     <p className="font-manrope mt-[15px]  xl:mt-[20px] mb-0  text-[18px] leading-[150%] text-[#C7C7C7]">
-                        Say Hello at &nbsp; &nbsp; <span className="underline text-slate-400">   yusufabiola555@gmail.com</span>
+                        Say Hello @ <span className="underline text-slate-400">   yusufabiola555@gmail.com</span>
+                    </p>
+                    <p className="font-manrope mt-[15px]  xl:mt-[10px] mb-0  text-[18px] leading-[150%] text-[#C7C7C7]">
+                      Tel:   <span className="text-slate-400"> +2349162034643, +2348109709390</span>
                     </p>
                 
                     <div className="flex gap-[24px] mt-[20px] xl:mt-[40px]">

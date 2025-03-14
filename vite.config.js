@@ -8,9 +8,7 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  server: {
-    historyApiFallback: true
-  }
+  base: '/my-portfolio/', 
  
  
 })
