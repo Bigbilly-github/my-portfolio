@@ -9,7 +9,7 @@ function Hero (){
 
     const scrollToPositionContact = () => {
         window.scrollTo({
-          top: 5050, // Adjust this value to scroll to your desired height
+          top: 7050, 
           behavior: "smooth",
         });
       };
@@ -24,7 +24,7 @@ function Hero (){
                 A front-end developer passionate about building accessible and user friendly websites.
                 </p>
                 <div className="flex gap-[16px] mt-[20px] md:mt-[40px]">
-                    <button onClick={scrollToPositionContact} className="w-[187px] h-[54px] bg-[#D3E97A] hover:text-[#D3E97A] rounded-[100px] border-0 text-center  font-manrope font-bold text-[16px] leading-[100%] hover:bg-[#0A0A0A] text-[#0A0A0A]">
+                    <button onClick={scrollToPositionContact} className="w-[187px] active:bg-black active:text-black  h-[54px] bg-[#D3E97A] hover:text-[#D3E97A] rounded-[100px] border-0 text-center  font-manrope font-bold text-[16px] leading-[100%] hover:bg-[#0A0A0A] text-[#0A0A0A]">
                         CONTACT ME
                     </button>
                    <a href="https://linkedin.com/in/abioladblogger"  ><img src={linkedin} alt="linkedin icon" /></a> 
