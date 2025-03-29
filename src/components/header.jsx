@@ -3,28 +3,18 @@
 function Header (){
 
 
-    const scrollToPositionAbout = () => {
-        window.scrollTo({
-          top: 4030, 
-          behavior: "smooth",
-        });
-      };
+
 
    
 
 
       const scrollToPositionContact = () => {
         window.scrollTo({
-          top: 5050, 
+          top: 7000, 
           behavior: "smooth",
         });
       };
-      const scrollToPositionProjects = () => {
-        window.scrollTo({
-          top: 850, 
-          behavior: "smooth",
-        });
-      };
+
     return(
         <>
         <header className="  flex justify-between items-center fixed right-0 bg-[#0A0A0A] left-0 top-0 z-20 h-[96px] xl:pr-[120px] sm:pr-[20px] sm:pl-[60px] pl-[20px]">
