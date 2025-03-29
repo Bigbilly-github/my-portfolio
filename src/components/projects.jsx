@@ -3,12 +3,22 @@ import jobtracker from "../img/projects/jobtracker.png"
 import todolist from "../img/projects/todolist.png"
 import travelagency from "../img/projects/travelagency.png"
 import youtube from "../img/projects/youtube.png"
+import thecutlab from "../img/projects/thecutlab.png"
 
 
 function Projects (){
 
 
-    const Projects =[ {
+    const Projects =[
+        {
+            name: "The Cut Lab - Barbershop Website",
+            description: "A modern, responsive barbershop website built with React & Tailwind CSS. It features a sleek landing page, service pricing, booking options, and smooth animations for an engaging user experience. Designed to showcase premium grooming services with a clean and professional interface. 🚀✨",
+            year:"2025",
+            image:thecutlab,
+            link:"https://thecutlab.netlify.app/",
+            githublink:"https://github.com/Bigbilly-github/my-portfolio"
+        },
+         {
         name: " A job Application Tracker ",
         description: "The Job Application Tracker is a web-based tool designed to help job seekers efficiently manage and organize their job applications. With an intuitive UI and dynamic features, users can track application statuses in one place.",
         year:"2025",
