@@ -4,12 +4,21 @@ import todolist from "../img/projects/todolist.png"
 import travelagency from "../img/projects/travelagency.png"
 import youtube from "../img/projects/youtube.png"
 import thecutlab from "../img/projects/thecutlab.png"
+import jobportal from "../img/projects/jobportal.png"
 
 
 function Projects (){
 
 
     const Projects =[
+        {
+            name: "Job Portal",
+            description: "A responsive job listing platform built with React and Tailwind CSS, featuring user registration, login, and job category filtering — all handled with React hooks and localStorage, no backend required.",
+            year:"2025",
+            image:jobportal,
+            link:"https://billy-jobportal.netlify.app/",
+            githublink:"https://github.com/Bigbilly-github/job-portal"
+        },
         {
             name: "The Cut Lab - Barbershop Website",
             description: "A modern, responsive barbershop website built with React & Tailwind CSS. It features a sleek landing page, service pricing, booking options, and smooth animations for an engaging user experience. Designed to showcase premium grooming services with a clean and professional interface. 🚀✨",
@@ -49,7 +58,8 @@ function Projects (){
         image:youtube,
         link:"https://youtube-landing-page-tawny.vercel.app/",
         githublink:"https://github.com/Bigbilly-github/mastering-tailwind-CSS"
-    }
+    },
+    
 
 ]
     return(
