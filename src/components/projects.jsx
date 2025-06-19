@@ -5,12 +5,21 @@ import travelagency from "../img/projects/travelagency.png"
 import youtube from "../img/projects/youtube.png"
 import thecutlab from "../img/projects/thecutlab.png"
 import jobportal from "../img/projects/jobportal.png"
+import billymart from "../img/projects/billymart.png"
 
 
 function Projects (){
 
 
     const Projects =[
+        {
+            name: "Billymart",
+            description: "BillyMart is a responsive e-commerce web app built with React and Firebase, featuring user-specific cart, wishlist, and secure authentication.",
+            year:"2025",
+            image:billymart,
+            link:"https://billymart.netlify.app/",
+           
+        },
         {
             name: "Job Portal",
             description: "A responsive job listing platform built with React and Tailwind CSS, featuring user registration, login, and job category filtering — all handled with React hooks and localStorage, no backend required.",
