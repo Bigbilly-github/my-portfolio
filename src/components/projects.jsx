@@ -6,6 +6,7 @@ import youtube from "../img/projects/youtube.png"
 import thecutlab from "../img/projects/thecutlab.png"
 import jobportal from "../img/projects/jobportal.png"
 import billymart from "../img/projects/billymart.png"
+import dashboard from "../img/projects/dashboard.png"
 
 
 function Projects (){
@@ -13,11 +14,21 @@ function Projects (){
 
     const Projects =[
         {
+            name: "Admin Dashboard",
+            description: "A responsive admin dashboard built with React and Tailwind CSS to display and manage business data using dynamic charts, tables, and UI components.",
+            year:"2025",
+            image:dashboard,
+            link:"https://billy-dashboard.netlify.app/",
+            stack:"React, Tailwind CSS, Framer, Recharts",
+           
+        },
+        {
             name: "Billymart",
             description: "BillyMart is a responsive e-commerce web app built with React and Firebase, featuring user-specific cart, wishlist, and secure authentication.",
             year:"2025",
             image:billymart,
             link:"https://billymart.netlify.app/",
+            stack:"React, Tailwind CSS, Firebase, Framer-Motion"
            
         },
         {
@@ -26,7 +37,8 @@ function Projects (){
             year:"2025",
             image:jobportal,
             link:"https://billy-jobportal.netlify.app/",
-            githublink:"https://github.com/Bigbilly-github/job-portal"
+            githublink:"https://github.com/Bigbilly-github/job-portal",
+            stack:"React, Tailwind CSS"
         },
         {
             name: "The Cut Lab - Barbershop Website",
@@ -34,7 +46,8 @@ function Projects (){
             year:"2025",
             image:thecutlab,
             link:"https://thecutlab.netlify.app/",
-            githublink:"https://github.com/Bigbilly-github/my-portfolio"
+            githublink:"https://github.com/Bigbilly-github/my-portfolio",
+            stack:"React, Tailwind CSS"
         },
          {
         name: " A job Application Tracker ",
@@ -42,7 +55,8 @@ function Projects (){
         year:"2025",
         image:jobtracker,
         link:"https://bigbilly-github.github.io/job-application-tracker/",
-        githublink:"https://github.com/Bigbilly-github/job-application-tracker"
+        githublink:"https://github.com/Bigbilly-github/job-application-tracker",
+        stack:"React, Tailwind CSS"
     },
     {
         name: "Landing page for a Travel Agency ",
@@ -50,7 +64,8 @@ function Projects (){
         year:"2025",
         image: travelagency,
         link:"https://bigbilly-github.github.io/landingPage/",
-        githublink:"https://github.com/Bigbilly-github/landingPage"
+        githublink:"https://github.com/Bigbilly-github/landingPage",
+        stack:"React, Tailwind CSS"
     },
     {
         name: "A todolist",
@@ -58,7 +73,8 @@ function Projects (){
         year:"2025",
         image:todolist,
         link:"https://todolist-lemon-alpha.vercel.app/",
-        githublink:"https://github.com/Bigbilly-github/todolist"
+        githublink:"https://github.com/Bigbilly-github/todolist",
+        stack:"React, Tailwind CSS"
     },
     {
         name: "Youtube landing page (clone)",
@@ -66,7 +82,8 @@ function Projects (){
         year:"2025",
         image:youtube,
         link:"https://youtube-landing-page-tawny.vercel.app/",
-        githublink:"https://github.com/Bigbilly-github/mastering-tailwind-CSS"
+        githublink:"https://github.com/Bigbilly-github/mastering-tailwind-CSS",
+        stack:"React, Tailwind CSS"
     },
     
 
@@ -123,7 +140,7 @@ function Projects (){
                                   Stack
                                </p>
                                <p>
-                                    React, Javascript, Tailwind CSS
+                                    {project.stack}
                                </p>
                                
                             </div>
