@@ -139,7 +139,7 @@ function Projects (){
                                <p className="text-[16px] font-manrope w-[33px] ">
                                   Stack
                                </p>
-                               <p>
+                               <p className="text-[12px] sm:text-[16px]">
                                     {project.stack}
                                </p>
                                

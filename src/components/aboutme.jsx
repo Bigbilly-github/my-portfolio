@@ -32,7 +32,7 @@ function Aboutme (){
                               
                         </p>
                         <p className="font-manrope mb-[81px]  text-[16px] md:text-[18px] leading-[150%] xl:w-[702px]  md:w-[600px] w-[343px] mt-[16px]  text-[#C7C7C7]">
-                        🚀 Let’s build something amazing together!
+                         Let’s build something amazing together!
                         </p>
                         
 
