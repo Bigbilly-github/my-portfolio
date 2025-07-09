@@ -10,8 +10,11 @@ import dashboard from "../img/projects/dashboard.png"
 import { useState } from "react"
 
 
+
 function Projects (){
     const [more,setMore] = useState(false);
+   
+
 
 
     const Projects =[
@@ -92,7 +95,7 @@ function Projects (){
 ]
     return(
         <>
-        <section className="mt-[100px] pb-[50px] xl:pt-[70px] xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
+        <section className="mt-[100px]  xl:pt-[70px] xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
             <div>
                 <h1 className=" md:w-[464px] w-[329px] md:h-[60px] h-[43px] xl:h-[76px] font-bebas md:text-[76px] text-[43px]  mb-0 leading-[100%] text-[#FFFFFF] ">
                FEATURED PROJECTS
@@ -101,7 +104,7 @@ function Projects (){
                 Here are some of the selected projects that showcase my passion for front-end development.
                 </p>
             </div>
-            <div className="xl:mt-[80px] mt-[120px] md:mt-[100px]">
+            <div className="xl:mt-[80px] mt-[120px] md:mt-[100px] flex flex-col items-center">
                 { Projects.slice(0,5).map((project,index) => 
                 <div key={index} className="xl:w-[1224px] xl:h-[600px] mb-[120px] flex  flex-col xl:flex-row gap-[48px]  items-center">
                     <div className="xl:w-[600px] xl:h-[600px] w-[384px] h-[343px] md:w-[500px] md:h-[400px] bg-[#1A1A1A]  flex justify-center items-center rounded-[15px]">
@@ -158,7 +161,7 @@ function Projects (){
                 </div>
                 )}
 
-                <a  onClick={() => setMore(!more)} className={`text-[28px] mx-[25%] ${more ? "hidden":""} font-semibold cursor-pointer text-slate-300 hover:underline hover:opacity-65  `}>View More Projects</a>
+                <a  onClick={() => setMore(!more)} className={`sm:text-[28px] text-[14px]  ${more ? "hidden":""} font-semibold cursor-pointer text-slate-300 hover:underline hover:opacity-65  `}>View More Projects</a>
 
                   {more && Projects.slice(5,Projects.length).map((project,index) => 
                 <div key={index} className="xl:w-[1224px] xl:h-[600px] mb-[120px] flex  flex-col xl:flex-row gap-[48px]  items-center">
@@ -166,11 +169,11 @@ function Projects (){
                         <img src={project.image} alt="" className="xl:w-[486px] xl:h-[347px]  w-[320px] h-[200px]  md:w-[400px]    rounded-[10px] "/>
 
                     </div>
-                    <div>
-                        <h2 className="xl:w-[576px] w-[343px] md:w-[500px] mb-0  font-manrope font-medium md:text-[28px] text-[24px] xl:text-[32px] leading-[140%]  text-[#FFFFFF] ">
+                    <div className="w-[343px] xl:w-[576px]  md:w-[500px] ">
+                        <h2 className="mb-0  font-manrope font-medium md:text-[28px] text-[24px] xl:text-[32px] leading-[140%]  text-[#FFFFFF] ">
                     {project.name}
                         </h2>
-                        <p className="xl:w-[576px]  w-[343px] md:w-[500px] mt-[16px] mb-0 h-auto font-manrope text-[16px] xl:text-[18px] leading-[150%]  text-[#C7C7C7]">
+                        <p className="mt-[16px] mb-0 h-auto font-manrope text-[16px] xl:text-[18px] leading-[150%]  text-[#C7C7C7]">
                         {project.description}
                         </p>
 
@@ -215,7 +218,6 @@ function Projects (){
                 </div>
                 )}
 
-                <a  onClick={() => setMore(!more)} className={`text-[28px] mx-[25%] ${more ? "":"hidden"} font-semibold cursor-pointer text-slate-300 hover:underline hover:opacity-65  `}>See Less Projects</a>
 
 
 

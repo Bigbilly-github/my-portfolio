@@ -13,6 +13,7 @@ createRoot(document.getElementById('root')).render(
           <HashRouter>
               <Routes>
                 <Route path="/" element={<Homepage />} />
+                
                
                 <Route path="*" element={<div>404 Not Found</div>} />
               </Routes>
