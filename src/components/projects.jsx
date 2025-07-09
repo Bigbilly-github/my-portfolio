@@ -7,9 +7,11 @@ import thecutlab from "../img/projects/thecutlab.png"
 import jobportal from "../img/projects/jobportal.png"
 import billymart from "../img/projects/billymart.png"
 import dashboard from "../img/projects/dashboard.png"
+import { useState } from "react"
 
 
 function Projects (){
+    const [more,setMore] = useState(false);
 
 
     const Projects =[
@@ -90,7 +92,7 @@ function Projects (){
 ]
     return(
         <>
-        <section className="mt-[100px] xl:pt-[70px] xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
+        <section className="mt-[100px] pb-[50px] xl:pt-[70px] xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
             <div>
                 <h1 className=" md:w-[464px] w-[329px] md:h-[60px] h-[43px] xl:h-[76px] font-bebas md:text-[76px] text-[43px]  mb-0 leading-[100%] text-[#FFFFFF] ">
                FEATURED PROJECTS
@@ -100,7 +102,7 @@ function Projects (){
                 </p>
             </div>
             <div className="xl:mt-[80px] mt-[120px] md:mt-[100px]">
-                { Projects.map((project,index) => 
+                { Projects.slice(0,5).map((project,index) => 
                 <div key={index} className="xl:w-[1224px] xl:h-[600px] mb-[120px] flex  flex-col xl:flex-row gap-[48px]  items-center">
                     <div className="xl:w-[600px] xl:h-[600px] w-[384px] h-[343px] md:w-[500px] md:h-[400px] bg-[#1A1A1A]  flex justify-center items-center rounded-[15px]">
                         <img src={project.image} alt="" className="xl:w-[486px] xl:h-[347px]  w-[320px] h-[200px]  md:w-[400px]    rounded-[10px] "/>
@@ -155,6 +157,65 @@ function Projects (){
 
                 </div>
                 )}
+
+                <a  onClick={() => setMore(!more)} className={`text-[28px] mx-[25%] ${more ? "hidden":""} font-semibold cursor-pointer text-slate-300 hover:underline hover:opacity-65  `}>View More Projects</a>
+
+                  {more && Projects.slice(5,Projects.length).map((project,index) => 
+                <div key={index} className="xl:w-[1224px] xl:h-[600px] mb-[120px] flex  flex-col xl:flex-row gap-[48px]  items-center">
+                    <div className="xl:w-[600px] xl:h-[600px] w-[384px] h-[343px] md:w-[500px] md:h-[400px] bg-[#1A1A1A]  flex justify-center items-center rounded-[15px]">
+                        <img src={project.image} alt="" className="xl:w-[486px] xl:h-[347px]  w-[320px] h-[200px]  md:w-[400px]    rounded-[10px] "/>
+
+                    </div>
+                    <div>
+                        <h2 className="xl:w-[576px] w-[343px] md:w-[500px] mb-0  font-manrope font-medium md:text-[28px] text-[24px] xl:text-[32px] leading-[140%]  text-[#FFFFFF] ">
+                    {project.name}
+                        </h2>
+                        <p className="xl:w-[576px]  w-[343px] md:w-[500px] mt-[16px] mb-0 h-auto font-manrope text-[16px] xl:text-[18px] leading-[150%]  text-[#C7C7C7]">
+                        {project.description}
+                        </p>
+
+                        <div className="mt-[32px]">
+                            <h1 className="border-b border-b-slate-800 text-[#C7C7C7] pb-[20px]">
+                                PROJECT INFO
+                            </h1>
+                            <div className="border-b border-b-slate-800 h-[50px] text-[#C7C7C7]  flex justify-between items-center">
+                               <p className="text-[16px] font-manrope w-[33px] h-[26px] ">
+                                  Year
+                               </p>
+                               <p>
+                              {project.year}
+                               </p>
+                            </div>
+                            <div className="border-b border-b-slate-800 h-[50px] text-[#C7C7C7]  flex justify-between items-center">
+                               <p className="text-[16px] font-manrope w-[33px] ">
+                                  Role
+                               </p>
+                               <p>
+                                    Front-end developer
+                               </p>
+
+                            </div>
+                            <div className="border-b border-b-slate-800 h-[50px] text-[#C7C7C7]  flex justify-between items-center">
+                               <p className="text-[16px] font-manrope w-[33px] ">
+                                  Stack
+                               </p>
+                               <p className="text-[12px] sm:text-[16px]">
+                                    {project.stack}
+                               </p>
+                               
+                            </div>
+
+                            <div className="mt-[48px] ">
+                                <a href={project.link} className="underline text-[#D3E97A] mr-[52px]  hover:opacity-70 font-manrope text-[16px] leading-[150%] w-[83px] h-[24px]"> VIEW PROJECT</a>
+                                <a href={project.githublink}  className="underline text-[#D3E97A]  hover:opacity-70 font-manrope text-[16px] leading-[150%] w-[83px] h-[24px]">SEE ON GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                )}
+
+                <a  onClick={() => setMore(!more)} className={`text-[28px] mx-[25%] ${more ? "":"hidden"} font-semibold cursor-pointer text-slate-300 hover:underline hover:opacity-65  `}>See Less Projects</a>
 
 
 
