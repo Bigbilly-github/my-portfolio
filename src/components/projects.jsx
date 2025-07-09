@@ -95,7 +95,7 @@ function Projects (){
 ]
     return(
         <>
-        <section className="mt-[100px]  xl:pt-[70px] xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
+        <section className="mt-[100px] pb-[50px]  xl:pt-[70px] xl:px-[100px] pt-[40px] md:pt-[80px] h-auto flex flex-col xl:items-start xl:gap-[20px] items-center xl:justify-center  border border-slate-800 border-x-0 w-full ">
             <div>
                 <h1 className=" md:w-[464px] w-[329px] md:h-[60px] h-[43px] xl:h-[76px] font-bebas md:text-[76px] text-[43px]  mb-0 leading-[100%] text-[#FFFFFF] ">
                FEATURED PROJECTS
