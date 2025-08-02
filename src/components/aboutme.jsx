@@ -1,11 +1,14 @@
 
-
+import { motion } from "framer-motion"
 
 function Aboutme (){
     return(
         <>
             <section className="w-full  xl:h-[800px] h-[700px]  md:h-[550px] flex items-center xl:items-start flex-col xl:flex-row xl:justify-center border-b border-slate-800  xl:pt-[122px] pt-[90px]">
-                <div className="flex xl:gap-[223px] flex-col xl:flex-row">
+                <motion.div className="flex xl:gap-[223px] flex-col xl:flex-row"
+                   initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, ease: "easeInOut" }}>
                     <div className="xl:w-[307px]   md:w-[500px]  w-[307px] text-center xl:text-left  h-[50px] xl:h-[91px] font-bebas font-normal md:text-[50px] text-[30px] xl:text-[101px] leading-[90%] text-[#FFFFFF]">
                         <h1>
                             ABOUT ME
@@ -39,7 +42,7 @@ function Aboutme (){
                        
 
                     </div>
-                </div>
+                </motion.div>
 
             </section>
         </>

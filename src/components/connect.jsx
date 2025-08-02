@@ -2,12 +2,16 @@
 import github from "../svg/connect/bxl-github.svg.svg"
 import instagram from "../svg/connect/bxl-instagram.svg.svg"
 import linkedin from "../svg/connect/bxl-linkedin.svg.svg"
+import { motion } from "framer-motion"
 
 function Connect (){
     return(
         <>
         <section className="w-full xl:h-[400px] h-[300px] xl:pl-[90px] flex xl:items-start flex-col items-center pt-[80px] border-b border-slate-800 "> 
-            <div>
+            <motion.div 
+               initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2, ease: "easeInOut" }}>
                     <h1 className="xl:w-[800px] w-[343px] md:w-[400px] md:h-[60px]  h-[43px] xl:h-[76px] mb-0 font-bebas text-[#FFFFFF] md:text-[60px] text-[43px]  xl:text-[76px]">
                         LET'S CONNECT
                     </h1>
@@ -26,7 +30,7 @@ function Connect (){
 
                     </div>
 
-            </div>
+            </motion.div>
            
 
 
