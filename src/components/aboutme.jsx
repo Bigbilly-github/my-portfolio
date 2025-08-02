@@ -20,7 +20,7 @@ function Aboutme (){
                         I am a front-end developer with a background in Computer Science. 
                         </h2>
                         <p className="font-manrope  text-[16px] md:text-[18px] leading-[150%] xl:w-[702px] md:w-[600px] w-[343px] mt-[16px]  text-[#C7C7C7]">
-                         I specialize in building responsive, user-friendly web applications using HTML, CSS, JavaScript, React, Github/Git and Tailwind CSS.
+                         I specialize in building responsive, user-friendly web applications using HTML, CSS, JavaScript, React, Next.js,  Github/Git and Tailwind CSS.
 
 
                         </p>
