@@ -6,6 +6,8 @@ import thecutlab from "../img/projects/thecutlab.png";
 import jobportal from "../img/projects/jobportal.png";
 import billymart from "../img/projects/billymart.png";
 import dashboard from "../img/projects/dashboard.png";
+import woodnest from "../img/projects/woodnest.png";
+import cyncra from "../img/projects/cyncra.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -13,6 +15,24 @@ function Projects() {
   const [more, setMore] = useState(false);
 
   const Projects = [
+    {
+      name: "Cyncra internship website",
+      description:
+        "During my internship at Cyncra, I was tasked with building the  'About us' page of the cyncra internship website. The site features a modern design, smooth animations, and showcases the company's services and projects.The website is live and can be accessed at the link below.",
+      year: "2025",
+      image: cyncra,
+      link: "https://internship.cyncra.com/aboutus",
+      stack: "Next.js, Tailwind CSS, Framer-Motion",
+    },
+    {
+      name: "Furniture Store",
+      description:
+        "A responsive e-commerce website landing page built with Next.js and Tailwind CSS to showcase a variety of furniture products.",
+      year: "2025",
+      image: woodnest,
+      link: "https://billy-woodnest.netlify.app/",
+      stack: "Next.js, Tailwind CSS, Framer-Motion",
+    },
     {
       name: "Admin Dashboard",
       description:
